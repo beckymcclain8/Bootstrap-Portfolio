@@ -3,8 +3,9 @@
     margin: 0 auto;
 }
 
+/* I couldn't get the navbar to fit like everything else!*/
 .navbar-light {
-    width: 960px;
+    width: 100%;
 }
 
 .navbar-light .navbar-brand {
@@ -30,6 +31,7 @@
     font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     padding: 20px;
     color:  #4aaaa5;
+    margin: 20px 0px 40px 0px;
 }
 
 #responsive-image {
@@ -44,7 +46,7 @@
     border-style: solid;
     font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     padding: 20px;
-    margin: 0px 12px 0px 12px;
+    margin: 20px 12px 40px 12px;
     color:#777777;
     display: block;
     z-index: 1;
@@ -64,7 +66,6 @@ h3 {
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     font-size: x-large;
     font-weight: bold;
-    text-align: center;
     border-bottom: 3px solid #e7e5e5;
 }
 
@@ -75,7 +76,7 @@ h3 {
     border-style: solid;
     padding: 20px;
     font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    margin: 0px 12px 0px 12px;
+    margin: 20px 12px 40px 12px;
     z-index: 1;
 }
 
@@ -101,21 +102,26 @@ h3 {
     text-align: center;
     margin: 20px;
 }
+/* I tried to center the words in the footer, but couldn't figure out why it wasn't working!*/
 
-.footer {
-    clear: both;
-    overflow: auto;
-    background: #666666;
+.foot {
+    position: static;
     color: white;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    margin-top: 10px;
-    padding: 5px;
-    width: 960px;
-    border-top: 5px solid #4aaaa5;
     font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
+
+.navbar-fixed-bottom {
+    margin-top: 40px;
+    position: static;
+        clear: both;
+        overflow: auto;
+        background: #666666;  
+        bottom: 0;
+        padding: 5px;
+        border-top: 5px solid #4aaaa5;      
+    }
+
 
 #media {
     width: 40px;
@@ -152,7 +158,7 @@ input[type=submit]:hover {
     border-style: solid;
     font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     padding: 20px;
-    margin: 0px 12px 0px 12px;
+    margin: 20px 12px 40px 12px;
     color:#777777;
     z-index: 1;
 }
